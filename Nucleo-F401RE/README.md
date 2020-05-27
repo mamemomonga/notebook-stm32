@@ -67,9 +67,10 @@ AdoptOpenJDKのインストール(JRE)
 
 [UM1724 STM32 Nucleo-64 boards User Manual](https://www.st.com/resource/en/user_manual/dm00105823-stm32-nucleo64-boards-mb1136-stmicroelectronics.pdf)
 
-![UM1724 Rev 13 Page12](./images/01.png)
-![UM1724 Rev 13 Page12](./images/02.png)
-![UM1724 Rev 13 Page12](./images/03.png)
+![UM1724](./images/01.png)
+![UM1724](./images/02.png)
+![UM1724](./images/03.png)
+![UM1724](./images/04.png)
 
 * ボード上緑LED(LD1) は PA5に接続
 * ボード上青ボタン(B1) は PC13に接続
