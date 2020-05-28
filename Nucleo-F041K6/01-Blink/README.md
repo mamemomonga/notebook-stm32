@@ -10,19 +10,25 @@ Nucleo搭載LED(D4)の点滅
 
 	$ diff -cr ../CubeMX/default/Src/main.c main.c
 
-	*** ../CubeMX/default/Src/main.c	2020-05-28 05:38:39.000000000 +0900
-	--- main.c	2020-05-28 06:04:36.000000000 +0900
+	*** ../CubeMX/default/Src/main.c	2020-05-28 20:35:53.234784439 +0900
+	--- main.c	2020-05-28 20:37:44.004426969 +0900
 	***************
-	*** 103,108 ****
-	--- 103,113 ----
+	*** 98,104 ****
+	    while (1)
 	    {
 	      /* USER CODE END WHILE */
-	  
-	+ 	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
-	+ 	HAL_Delay(100);
-	+ 	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
-	+ 	HAL_Delay(100);
-	+ 
+	! 
+	      /* USER CODE BEGIN 3 */
+	    }
+	    /* USER CODE END 3 */
+	--- 98,107 ----
+	    while (1)
+	    {
+	      /* USER CODE END WHILE */
+	! 	HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_SET);
+	! 	HAL_Delay(100);
+	! 	HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_RESET);
+	! 	HAL_Delay(100);
 	      /* USER CODE BEGIN 3 */
 	    }
 	    /* USER CODE END 3 */
