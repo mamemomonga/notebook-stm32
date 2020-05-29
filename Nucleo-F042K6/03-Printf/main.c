@@ -20,6 +20,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "app.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -57,7 +58,10 @@ static void MX_USART2_UART_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+int _write( int file, char *buf, int len ) {
+	HAL_UART_Transmit(&huart2, (uint8_t *)buf, len, 1000);
+	return len;
+}
 /* USER CODE END 0 */
 
 /**
@@ -90,6 +94,7 @@ int main(void)
   MX_GPIO_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
+  APP_Init();
 
   /* USER CODE END 2 */
 
@@ -98,7 +103,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+	APP_MainLoop();
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
