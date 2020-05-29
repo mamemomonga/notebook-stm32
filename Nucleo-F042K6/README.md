@@ -1,9 +1,9 @@
 # Nucleo F042K6
 
 * [Nucleo0F042K6](https://www.stmcu.jp/design/hwdevelop/nucleo/51864/)
-* 基本的な設定は [F041K6](../Nucleo-F401RE) と同じ
+* 基本的なセットアップは [F401RE](../Nucleo-F401RE) と同じ
 * ユーザボタンのかわりにジャンパーになっている。
-* Mac/Windowsでも正しく認識する模様。ケーブルか基板の問題か？
+* Mac/Windowsでも正しく認識する模様。F401REがダメだったのはケーブルか基板の問題か？
 
 ## マイコン
 
