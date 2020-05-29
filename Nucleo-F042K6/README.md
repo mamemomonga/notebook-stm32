@@ -1,8 +1,17 @@
 # Nucleo F042K6
 
+* [Nucleo0F042K6](https://www.stmcu.jp/design/hwdevelop/nucleo/51864/)
 * 基本的な設定は [F041K6](../Nucleo-F401RE) と同じ
 * ユーザボタンのかわりにジャンパーになっている。
 * Mac/Windowsでも正しく認識する模様。ケーブルか基板の問題か？
+
+## マイコン
+
+STM32F042K6
+
+* ARM 32-bit Coretex-M0 48MHz
+* 32 Kbytes Flash
+* USBとかいろいろある
 
 # ボードとピンレイアウト
 * [UM1956 User manual STM32 Nucleo-32 boards (MB1180)](https://www.st.com/resource/en/user_manual/dm00231744-stm32-nucleo32-boards-mb1180-stmicroelectronics.pdf)
