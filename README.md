@@ -1,5 +1,5 @@
 # STM32のメモ帳
 
 * [STM32 Nucleo F401RE](./Nucleo-F401RE)
-* [STM32 Nucleo F041KB](./Nucleo-F041KB)
+* [STM32 Nucleo F041K6](./Nucleo-F041K6)
 
