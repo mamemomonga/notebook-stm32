@@ -20,6 +20,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "app.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -90,6 +91,7 @@ int main(void)
   MX_GPIO_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
+  APP_Init();
 
   /* USER CODE END 2 */
 
@@ -98,7 +100,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+	APP_MainLoop();
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -192,7 +194,7 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin : A2_Pin */
   GPIO_InitStruct.Pin = A2_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(A2_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : LD3_Pin */
