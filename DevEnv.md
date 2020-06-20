@@ -34,7 +34,7 @@ AdoptOpenJDKのインストール(JRE)
 	$ st-flash --version
 	v1.5.1
 
-## macOS Brew
+### Homebrew(macOS)
 
 	$ brew update
 	$ brew upgrade
